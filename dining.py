@@ -49,8 +49,6 @@ response = requests.get(URL).text
 jsonData = json.loads(response)
 
 for meal in reversed(jsonData):
-	#print i.keys()
-	
 	items = {}
 	containsItem = False
 	correctDate = re.search(DATE, meal["EventStart"])
